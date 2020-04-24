@@ -2,6 +2,8 @@
 
 // Chargement du module natif "http"
 var http = require('http');
+// Chargement de mon module natif "monModule" à la racine de l'application (./)
+var monModule = require('./monModule');
 
 // Création du serveur
 var server = http.createServer(function(req, res){
@@ -12,7 +14,7 @@ var server = http.createServer(function(req, res){
     // res.setHeader('Content-Type', 'text/html');
 
     // res.end("Bonjour, je suis ton serveur Node");
-    res.write('<html></head></head><body><h1>Mon serveur HTTP Node</h1><p>ok ça marche</p></body></html>');
+    res.write('<html></head></head><body><h1>Année de naissance : '+monModule.naissance+'</h1>'+monModule.age()+'<p>ok ça marche</p></body></html>');
     res.end();
 
 });
