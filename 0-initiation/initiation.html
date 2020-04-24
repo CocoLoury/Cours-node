@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Initiation JS</title>
+        <!-- Lancement d'un code javascript -->
+        <script type="text/javascript">
+
+            // Commentaire JS : //      /*   */
+            // alert("test");
+
+            console.log("mon test");
+            // console.clear();
+
+
+            // Variable avec une portée de bloc
+            let a = 1;
+            a++;    
+            console.log("a = "+a);
+
+            let txt = "Mon texte";
+            console.log(txt);
+
+            let ok = true;
+            console.log(ok);
+
+            // Variable de type constantes
+            const j = 365;
+            // j++; Erreur, on ne peut pas modifier une constante
+            console.log(j);
+
+            // Variable de type var avec une portée global
+            var i = 10;
+            console.log(i);
+
+            let x = 10;
+            {
+                let x = 20;
+            }
+            console.log("x = "+x);
+
+            var y = 10;
+            {
+                var y = 20;
+            }
+            console.log("y = "+y);
+
+            // Conditions
+
+            if (y > 5){
+                console.log("y est supérieur à 5");
+            }else {
+                console.log("y est inférieur à 5");
+            }
+
+            // Boucles FOR
+
+            for (i=0; i<10; i++){
+                console.log(i);
+            }
+
+            // Fonctions
+
+            Bonjour("Colin");
+            Bonjour("Martin");
+
+            function Bonjour(name){
+                console.log("Bonjour "+name);
+            }
+
+            var result = x2(25);
+
+            console.log(result);
+
+            function x2(param){
+                return param*2;
+            }
+
+            // Nettoyage de la console
+            console.clear();
+
+
+            // Tableaux
+
+            // 2 façons de déclarer un tableau en JS :
+            var tab = ["html", "css", "js"];
+            var tab = new Array("html", "css", "js");
+
+            // Pousser une nouvelle valeur dans le tableau
+            tab.push("node JS");
+
+            console.log(tab);
+
+            // Parcourir le tableau et afficher toutes ces valeurs
+            tab.forEach(function(e){
+                console.log("Je fais du "+e);
+            });
+
+        </script>
+    </head>
+    <body>
+        <h1>JAVASCRIPT</h1>
+    </body>
+</html>
