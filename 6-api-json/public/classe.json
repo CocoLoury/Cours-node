@@ -1,5 +1,22 @@
 {
     "ecole": "g4",
     "promo": "INGE 1",
-    "annee": 2020
+    "annee": 2020,
+    "etudiants" : [
+        {
+            "nom" : "Loury",
+            "prenom" : "Colin",
+            "username" : "loury"
+        },
+        {
+            "nom" : "Platet",
+            "prenom" : "Sylvain",
+            "username" : "sylvainp"
+        },
+        {
+            "nom" : "Boutet",
+            "prenom" : "Julien",
+            "username" : "julienboutet"
+        }
+    ]
 }

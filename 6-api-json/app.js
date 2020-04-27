@@ -4,15 +4,20 @@ var twig = require('twig')
 var express = require('express');
 var app = express();
 
+// Créer un port dynamique pour le localhost ou la version en ligne 
+app.set('port', process.env.PORT || 8080);
+
+//console.log(app.settings.port);
+
 // Nos données
 var equipe = require('./equipe')
 
-// Défini un dossier public pour les 
+// Défini un dossier public pour les assets (img / js / css) 
 app.use(express.static('public'));
 
 // API Json
 var request = require('request');
-var urlApi = "http://localhost:8080/classe.json";
+var urlApi = "http://demo.romainguillo.com/node/classe.json";
 
 // Routes de l'applications :
 app.get('/', function(req, res){
@@ -58,8 +63,8 @@ app.get('*', function(req, res){
 });
 
 // Ecoute le port de 8080
-app.listen(8080);
+//app.listen(8080);
 
-// Ecoute le port de l'environement
-//app.listen(process.env.PORT);
+// Ecoute le port de dynamique
+app.listen(app.settings.port);
 
