@@ -1,0 +1,15 @@
+{% include './partials/header.twig' %}
+<h1>Disponibilité des Velo'v en temps réel</h1>
+<div id="stations">
+    {% for station in stations %}
+    <div class="station">
+        <div class="bubble color-{{station.availabilitycode}}"></div>
+        {{ station.name }} <br> 
+        Vélos disponibles : {{ station.available_bike_stands }} / {{ station.bike_stands }}
+        <div class="bar">
+            <div class="barint color-{{station.availabilitycode}}" style="width:{{ station.available_bikes  / station.bike_stands * 100  }}%"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% include './partials/footer.twig' %}

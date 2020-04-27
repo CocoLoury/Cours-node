@@ -17,9 +17,9 @@ app.use(express.static('public'));
 
 // API Json
 var request = require('request');
-// API Prof
 var urlApi = "http://demo.romainguillo.com/node/classe.json";
-
+// API Velo'v
+var urlApiVelov = "https://download.data.grandlyon.com/ws/rdata/jcd_jcdecaux.jcdvelov/all.json";
 
 // Routes de l'applications :
 app.get('/', function(req, res){
@@ -55,6 +55,13 @@ app.get('/classe', function(req, res){
         var data = JSON.parse(body);
         //console.log(data.ecole);
         res.render("classe.twig", {data : data}); // Va chercher classe.twig dans le dossier views
+    });
+});
+
+app.get('/velov', function(req, res){
+    request(urlApiVelov, function(error, response, body){
+        var data = JSON.parse(body);
+        res.render("velov.twig", {mode :  "fullscreen", stations : data.values}); // Va chercher velov.twig dans le dossier views
     });
 });
 

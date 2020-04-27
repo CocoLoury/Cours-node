@@ -1,0 +1,95 @@
+body{
+  font-family: sans-serif;
+  padding: 40px;
+}
+
+body.fullscreen{
+  background: #333;
+  color:#eee;
+}
+
+#app{
+  width: 96%;
+  margin: 20px auto;
+}
+#app.active{
+  background: yellow;
+  box-shadow: 0px 0px 50px rgba(0,0,0,0.5);
+  transition: ease all 0.3s;
+}
+
+h1{ font-size: 60px }
+
+nav a{
+color: #eee;
+background: #333;
+margin-right: 20px;
+cursor: pointer;
+text-decoration: none;
+padding: 12px;
+border-radius: 3px;
+}
+nav a:hover{
+background: #000;
+color: yellow;
+transition: ease all 0.2s;
+}
+
+li{
+margin-bottom: 10px;
+color:#666;
+}
+li strong{
+font-size: 25px;
+color:#333;
+}
+
+
+#stations{
+display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+}
+
+.station{
+width: 18%;
+margin-bottom: 20px;
+
+padding: 10px;
+box-sizing: border-box;
+font-size: 13px;
+}
+
+.bubble{
+width: 30px;
+height:30px;
+border-radius: 50%;
+float: left;
+background: green;
+margin-right: 10px
+}
+
+.color-0{
+background: grey;
+}
+
+.color-1{
+background: green;
+}
+
+.color-2{
+background: blue;
+}
+
+.color-3{
+background: orange;
+}
+
+.bar{
+margin-top: 5px;
+background: #000;
+}
+
+.barint{
+height: 10px;
+}
