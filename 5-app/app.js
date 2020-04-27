@@ -44,6 +44,9 @@ app.get('*', function(req, res){
     res.send("404");
 });
 
-// Ecoute le port 8080
-app.listen(8080);
+// Ecoute le port de 8080
+//app.listen(8080);
+
+// Ecoute le port de l'environement
+app.listen(process.env.PORT);
 
