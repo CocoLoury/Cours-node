@@ -1,0 +1,19 @@
+{% include './partials/header.twig' %}
+    <h2 class="titrepage">Mes compétences</h2>
+    <div id="competences">
+        {% for comp in competences %}
+            <div class="competence">
+                <h2 class="titrepage">
+                <li id="trions"><strong>{{comp.Intitule}}</strong> : {{comp.Note}}/5<br></li>
+                </h2>
+            </div>
+        {% endfor %}
+    </div>
+    <a id="tri">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Tri !
+    </a>
+{% include './partials/footer.twig' %}

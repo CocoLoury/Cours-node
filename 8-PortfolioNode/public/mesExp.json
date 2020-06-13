@@ -1,0 +1,34 @@
+{
+    "experience" : [
+        {
+            "poste" : "Développeur informatique",
+            "intitule" : "Alternance - FICUCIAL - Lyon",
+            "description" : "Développer une application web en PHP avec Symfony et VueJS avec Vuetify"
+        },
+        {
+            "poste" : "Développeur informatique",
+            "intitule" : "Stage - APRR - Dijon",
+            "description" : "Migrer une bibliothèque de requêtes Business Object. Recenser les besoins des utilisateurs. Développer des solutions et proposer des améliorations. Assister dans la coordination de l’équipe projet."
+        },
+        {
+            "poste" : "Chef de projet – Développeur Mobile",
+            "intitule" : "Porjet simulation client - IUT - Dijon",
+            "description" : "Superviser une équipe de 6 développeurs. Développer une application mobile en C# avec Xamarin. Animer des réunions d’avancement de projet"
+        },
+        {
+            "poste" : "Contractuel",
+            "intitule" : "Trésorerie de Mehun-Sur-Yèvre",
+            "description" : ""
+        },
+        {
+            "poste" : "Facteur",
+            "intitule" : "LA POSTE",
+            "description" : ""
+        },
+        {
+            "poste" : "Chef de projet",
+            "intitule" : "Projet organisation - IUT - Dijon",
+            "description" : "Recenser les besoins du client. Construire le cahier des charges. Rédiger les documents : PBS – WBS – OBS. Construire les diagrammes UML. Construction de l’Interface Homme Machine. Estimer les charges de travail de l’équipe"
+        }
+    ]
+}

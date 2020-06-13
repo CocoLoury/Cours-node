@@ -1,0 +1,15 @@
+{% include './partials/header.twig' %}
+<h2 class="titrepage">Mes expériences professionnelles</h2>
+<div id="corpExp">
+{% for experience in experiences %}
+<div class="box">
+<div class="glass"></div>
+    <div class="content">
+        <h3>{{ experience.poste }}</h3> <br>
+        <h4>{{ experience.intitule }}</h4> <br>
+        <p>{{ experience.description }}</p> <br>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% include './partials/footer.twig' %}
